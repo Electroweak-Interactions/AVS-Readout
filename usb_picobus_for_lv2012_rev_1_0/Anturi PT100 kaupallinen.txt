@@ -1,0 +1,15 @@
+Anturityyppi: PT-100 kaupall
+Data: vastus vs. celsius
+Pisteita: 6
+L-tilakerroin: positiivinen
+
+
+
+
+
+1	80.31    -50
+2	100.00     0
+3	119.4     50
+4	138.5     100
+5	157.31    150
+6	175.84     200
