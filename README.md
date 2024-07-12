@@ -14,3 +14,23 @@ https://www.picowatt.fi/interfacing/computer_interfaces.html
 https://www.picowatt.fi/avs47b/avs47_configurations.pdf
 
 https://jorisvr.nl/article/AVS-47-serial-interface
+
+## Temperature Calibration
+
+During setup, you will pass the temperature calibration curve files to the program. The format is a two-row CSV with row 1 being resistance in Ohms and row 2 temperature in K. Note that *temperatures* should be strictly *decreasing* with each column. Simple (linear?) interpolation is done during the conversion.
+
+See the [reference](https://github.com/Electroweak-Interactions/AVS-Readout/reference/) folder for examples. 
+
+## Log File Format
+
+As of now, the log file is in LabVIEW CSV format, which prints floats to a significant number of digits. The columns include:
+
+- Timestamp (seconds since 1/1/1900)
+- Resistance (Nebulous) - Appears to be "displayed" (i.e. relative to the AVS-47 Range value, but sometimes it's bigger than the Raw Resistance column...)
+- Resistance (Raw: Ohms)
+- Channel (0-indexed)
+- 
+- ?
+- ?
+- ?
+- ?
